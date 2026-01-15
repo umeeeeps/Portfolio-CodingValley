@@ -1,0 +1,114 @@
+<!-- 
+ * FILE			         : index.html
+ * PROJECT		         : Portfolio 
+ * PROGRAMMER	         : Eumee Garcia
+ * FIRST VERSION         : 2025-09-04
+ * DESCRIPTION	         : This file contains the main HTML structure for the
+                           portfolio website. Displays profile information, tab-based content
+                           and seasonal themes.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Coding Valley</title>
+
+<link rel="icon" href="images/icon.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="spring">
+
+    <!-- Seasonal visual effects (petals, leaves and snow)-->
+<div class="season-effects">
+    <div class="petal"></div><div class="petal"></div><div class="petal"></div>
+    <div class="petal"></div><div class="petal"></div><div class="petal"></div>
+</div>
+
+<!------------------------------------------------------------>
+<div class="main-container">
+
+    <!-- Profile Photo and Contact Information -->
+<div class="photo-container">
+    <img src="images/SmileWBorder.png" class="profile-photo primary">
+    <img src="images/ShockedWBorder.png" class="profile-photo secondary">
+
+    <div class="connect">
+        <p><strong>LET'S CONNECT</strong></p>
+        <p>Email: eumee.garcia19@gmail.com</p>
+        <p>LinkedIn: Eumee Garcia</p>
+    </div>
+</div>
+
+<!-- Main Content Panel -->
+<div class="container">
+    <img src="images/sign.PNG" class="signature">
+    <p class="tagline">Welcome! I’m Eumee &lt;3</p>
+
+    <!-- Tab Navigation -->
+    <div class="pixel-tabs">
+        <button class="tab-btn active" onclick="openTab(event,'about','spring')">About Me</button>
+        <button class="tab-btn" onclick="openTab(event,'projects','summer')">Projects</button>
+        <button class="tab-btn" onclick="openTab(event,'skills','fall')">Skills</button>
+        <button class="tab-btn" onclick="openTab(event,'contact','winter')">Contact</button>
+    </div>
+
+    <!-- About tab -->
+     <div id="about" class="tab-content active">
+        <p>🌸 My name is Eumee Garcia. I am a second-year Software Engineering Student at Conestoga College. 🌸</p>
+        <p> I am currently seeking a Spring 2026 Co-op opportunity.  </p>
+        <p> Over the past years, I have been developing my skills in HTML, CSS, Javascript, C and C#.
+            My passion for bringing creative ideas to life motivates me to continue learning and improving everyday. </p>
+        <p> When I am not coding, you'll probably find me playing Stardew Valley, the game that inspired this portfolio
+            and helped spark my interest in becoming a software engineering student.
+        </p>
+
+       
+    </div>
+
+    <!-- Project tab -->
+    <div id="projects" class="tab-content">
+        <p>☀️ Projects on the process!</p>
+    </div>
+
+      <!-- Skills tab -->
+    <div id="skills" class="tab-content">
+        <p> I have experience using Git and GitHub for version control and have worked with Azure DevOps
+            in school projects to track and manage tasks. I also have knowledge of Windows programming.
+            Additionally, I have used PlatformIO to upload and debug microcontrollers during a hackathon.
+        </p>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">PHP</div>
+            <div class="skill">.NET framework</div>
+            <div class="skill">WPF</div>
+            <div class="skill">XAML</div>
+            <div class="skill">ASP.NET</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">C</div>
+            <div class="skill">C#</div>
+        </div>
+
+    </div>
+
+      <!-- Contact tab -->
+    <div id="contact" class="tab-content">
+         <p>Email: eumee.garcia19@gmail.com</p>
+         <p>LinkedIn: Eumee Garcia</p>
+         <p>GitHub: umeeeeps</p>
+    </div>
+
+</div>
+</div>
+<!------------------------------------------------------------>
+
+  <!-- External JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>
